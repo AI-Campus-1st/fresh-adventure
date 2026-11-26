@@ -15,3 +15,15 @@ Thumbs.db
 *.csv
 *.xlsx
 *.parquet
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+*.tmp
+*.swp
+
+# Credentials
+*.p12
+credentials*.json
+service-account*.json
