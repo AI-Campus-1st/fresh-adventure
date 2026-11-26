@@ -35,6 +35,21 @@
 | 주간일지 | [docs/weekly](docs/weekly) |
 | 협업 규칙 (브랜치·커밋·PR·API 키) | [docs/conventions.md](docs/conventions.md) |
 
+## 폴더 구조
+
+```
+fresh-adventure/
+├── README.md                 # 프로젝트 소개, 레포 목록
+├── docs/
+│   ├── conventions.md        # 협업 규칙
+│   ├── proposal/             # 기획안 (버전별 파일)
+│   └── weekly/               # 주간일지
+│       ├── README.md         # 작성 규칙, 일지 목록
+│       └── _template.md      # 주간일지 템플릿
+└── .github/
+    └── pull_request_template.md
+```
+
 ## 팀
 
 | 직무 | 역할 | 이름 |
@@ -42,6 +57,6 @@
 | 경영 | PM·비즈니스 전략 | |
 | 마케팅 | 수요·타깃·프로모션 전략 | |
 | 데이터분석 | 분석·예측 리드 | |
-| BI엔지니어 | 파이프라인·대시보드 | 김한승 |
+| BI엔지니어 | 파이프라인·대시보드 | |
 
 > ⚠️ 이 레포는 **Public**입니다. API 키, `.env`, 원본 데이터, 데이터랩 수집값은 절대 올리지 마세요.

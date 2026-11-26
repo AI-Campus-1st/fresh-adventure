@@ -1,0 +1,17 @@
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 비밀값 (Public 레포 — 절대 커밋 금지)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 데이터 파일 (원본·수집값은 S3/DB에 보관)
+*.csv
+*.xlsx
+*.parquet
