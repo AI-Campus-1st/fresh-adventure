@@ -17,7 +17,8 @@ fresh-adventure는 중소 규모 온라인 신선식품 판매사의 MD·마케�
 잠재적 판매 골든타임을 찾고, 선제적인 마케팅·행사 시점 결정을 돕습니다. 원가 위험이 있는 품목도 함께 알려 줍니다.
 
 - 승인된 PTS 기준: [docs/planning/PTS.md](docs/planning/PTS.md) (v0.2, 2026-11-26 승인)
-- 최신 기획안: [docs/proposal/proposal_v3.2.md](docs/proposal/proposal_v3.2.md) (1차 확정본, PTS 기준으로 정렬 예정)
+- 프로젝트 규칙: [RULES.md](RULES.md) (승인 대기)
+- 기획안: [docs/proposal/](docs/proposal/) (최신 v3.4, 버전 목록은 폴더 README 참고)
 
 여기에 적힌 기능은 모두 **계획 단계**입니다. 기획안 v3.1은 이전 가칭 "FreshLens"를 사용합니다.
 
@@ -50,16 +51,18 @@ Private 레포는 팀원만 접근할 수 있습니다.
 
 | 경로 | 내용 |
 | --- | --- |
-| [docs/proposal/](docs/proposal/) | 버전별 기획안 (최신: v3.2) |
-| [docs/planning/](docs/planning/) | PTS 정의, 범위, 일정, 요구사항 |
+| [RULES.md](RULES.md) | 프로젝트 공통 규칙 (거버넌스·분석·보안·협업) |
+| [docs/DECISION_LOG.md](docs/DECISION_LOG.md) | 주요 결정 기록 |
+| [docs/proposal/](docs/proposal/) | 버전별 기획안 (최신: v3.4) |
+| [docs/planning/](docs/planning/) | PTS, 팀 역할, 시장조사, MVP·PRD 등 기획·요구사항 |
 | [docs/architecture/](docs/architecture/) | 시스템 아키텍처 명세 |
 | [docs/data/](docs/data/) | 데이터 출처, 스키마, 데이터 사전 |
 | [docs/analytics/](docs/analytics/) | 분석 방법론과 지표 정의 |
 | [docs/contracts/](docs/contracts/) | 레포 간 공유 데이터·API 계약 |
 | [docs/design/](docs/design/) | UI/UX 디자인과 와이어프레임 |
-| [docs/management/](docs/management/) | 회의록, 역할, 프로젝트 관리 |
+| [docs/management/](docs/management/) | 로드맵, 회의록, 프로젝트 관리 |
 | [docs/weekly/](docs/weekly/) | 주간일지 |
-| [docs/adr/](docs/adr/) | 아키텍처 결정 기록 |
+| [docs/adr/](docs/adr/) | 상세 아키텍처 결정 기록 (결정 목록은 DECISION_LOG) |
 | [docs/testing/](docs/testing/) | 테스트 전략과 검증 보고서 |
 | [docs/deployment/](docs/deployment/) | 배포·운영 가이드 |
 | [docs/conventions.md](docs/conventions.md) | 브랜치·커밋·PR·비밀값 관리 규칙 |
@@ -69,7 +72,7 @@ Private 레포는 팀원만 접근할 수 있습니다.
 ## 현재 상태
 
 - Phase 01(PTS 정의) 완료: PTS v0.2 승인 (2026-11-26)
-- 레포 초기 구조 구성 완료 (메인·FE). data·BE 레포 로컬 초기화는 대기 중입니다.
+- 4개 레포 초기 구조 구성 완료.
 - 애플리케이션 기능, 데이터 파이프라인, 분석 결과는 아직 구현되지 않았습니다.
 - 프런트엔드·백엔드 기술 스택은 팀 승인 대기 중입니다.
 

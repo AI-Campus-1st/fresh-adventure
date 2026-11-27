@@ -1,5 +1,16 @@
 # 협업 규칙
 
+| Field | Value |
+| --- | --- |
+| Document | conventions.md |
+| Version | 0.2 |
+| Status | PROPOSED |
+| Last Updated | 2026-11-27 |
+| Approved by | Pending |
+| Approval Date | Pending |
+| Document Owner | 김한승 |
+| Scope | 4개 레포(메인·data·fe·be) 공통 Git·협업·비밀값·데이터 파일 규칙 |
+
 4개 레포(메인·data·fe·be)에 공통으로 적용합니다.
 
 ## 1. 브랜치
@@ -36,7 +47,7 @@
 
 ## 4. API 키·비밀값 관리 (기획안 5-7, 11장)
 
-- 데이터랩 Client ID는 **BI엔지니어 1명만** 관리하고, 서버 환경변수로만 둡니다. 팀원 공유·GitHub 업로드 금지 (NAVER API HUB 약관 7.2②).
+- 데이터랩 Client ID는 **TEAM_ROLES에서 지정한 키 보유자 1명(현재 김민지)만** 관리하고, 서버 환경변수로만 둡니다. 팀원 공유·GitHub 업로드 금지 (NAVER API HUB 약관 7.2②).
 - 팀원별 키로 나눠 호출해 한도를 늘리지 않습니다 (약관 7.3⑤).
 - 공공데이터포털·KOSIS·LLM 키, DB 접속 정보도 같은 방식으로 관리합니다.
 - 각 레포에는 `.env.example`(키 이름만)을 두고, 실제 값은 `.env`에 넣습니다. `.env`는 `.gitignore`로 제외합니다.
@@ -44,5 +55,14 @@
 
 ## 5. 데이터 파일
 
-- 원본 데이터는 S3, 정제 데이터는 RDS에 둡니다. 레포에는 CSV·Parquet 등 데이터 파일을 올리지 않습니다.
+- 원본·정제 데이터의 저장 위치는 TECHSTACK·ARCHITECTURE 승인 후 정합니다. 레포에는 CSV·Parquet 등 데이터 파일을 올리지 않습니다.
 - 데이터랩 수집값은 재제공 금지(약관 7.3⑥)이므로 Public 레포·노트북 출력에 원본 수치를 남기지 않습니다.
+
+---
+
+## Revision History
+
+| Version | Date | Status at Revision | Description |
+| --- | --- | --- | --- |
+| 0.1 | 2026-11-26 | (상태 표기 없음) | 초기 협업 규칙 (Phase 01 레포 구조 초기화 시 작성). |
+| 0.2 | 2026-11-27 | PROPOSED | 문서 메타데이터 추가, DataLab 키 보유자를 TEAM_ROLES 기준으로 수정, 승인 전 기술 결정(S3·RDS) 문구 제거. |
