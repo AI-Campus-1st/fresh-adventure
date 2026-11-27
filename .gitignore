@@ -27,3 +27,6 @@ tmp/
 *.p12
 credentials*.json
 service-account*.json
+
+# Claude Code personal settings
+.claude/settings.local.json
